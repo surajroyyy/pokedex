@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  align-items: center;
+  /*justify-content: center;*/
+}
+
+header {
+  overflow: hidden;
+  min-height: 20vh;
+  top: 0;
+  min-width: 100%;
+  /*font-size: calc(10px + 2vmin);*/
+  position: fixed;
+  z-index: 100;
+  justify-content: space-between;
+  display: flex;
+}
+
+#banner {
+  max-height: 20vh;
+  width: 100%;
+  object-fit: cover;
+  border: 40px;
+  z-index: -10;
+  position: absolute;
+}
+
+#title {
+  z-index: 0;
+  font-size: 45px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0 0 5px black, 0 0 5px black;
+  padding-left: 20px
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 20vh;
+  opacity: 0.3;
+  background-color: black;
+  z-index: -5;
+}
+
+#list-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20vh;
+  background-image: linear-gradient(to right, cadetblue, darkslateblue);
+}
+
+#grid-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-top: 20vh;
+  background-image: linear-gradient(to right, indianred, darkred);
+  padding-left: 35px
+}
+
+#details-body {
+  height: 100vh;
+  padding-top: 25vh;
+  background-image: linear-gradient(to right, lightgreen, green);
+  font-family: Futura, sans-serif;
+  color: darkslategrey;
+}
+
+#details-body h3 {
+  text-transform: capitalize;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+#details-card {
+  background-color: white;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid darkslateblue;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 0 black;
+  font-size: 15px
+}
+
+#details-card img {
+  height: 150px;
+  width: 150px;
+}
+
+#detail-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#pokemon-card-list {
+  margin: 15px;
+  width: 30vw;
+  background-color: white;
+  border-radius: 20px;
+  font-family: Futura, sans-serif;
+  border: 2px solid darkslateblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: capitalize;
+  text-align: center;
+  color: darkslategrey;
+  box-shadow: 0px 0px 15px 0 black;
+}
+
+#prev {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 5px black, 0 0 5px black;
+  font-size: 30px
+}
+
+#prev:hover {
+  color: lightgrey;
+}
+
+#next {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  text-shadow: 0 0 5px black, 0 0 5px black;
+}
+
+#next:hover {
+  color: lightgrey;
+}
+
+#types-list li {
+  list-style: none;
+  display: inline;
+  float: left;
+  font-size: 25px;
+  justify-content: center;
+  padding: 0 5px;
+  text-transform: capitalize;
+}
+
+#title-num {
+  font-weight: 30;
+}
+
+#details-link {
+  text-decoration: none;
+}
+
+#pokemon-card-list:hover {
+  background-color: slateblue;
+  color: white;
+  transition: 0.5s ease height;
+}
+
+#pokemon-card-grid:hover {
+  background-color: palevioletred;
+  color: white;
+  transition: 0.5s ease height;
+}
+
+#pokemon-card-list p {
+  padding-right: 20px;
+  font-size: 13px;
+}
+
+#pokemon-card-list img {
+  padding-left: 5px;
+}
+
+#pokemon-card-grid{
+  margin: 10px;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 25px;
+  font-family: Futura, sans-serif;
+  border: 2px solid darkslateblue;
+  display: inline-grid;
+  box-shadow: 0px 0px 15px 0 black;
+}
+
+#search-list-view {
+  display: flex;
+  flex-direction: column;
+}
+
+#poke-list {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+
+#poke-grid {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+#none-found {
+  margin-top: 60px;
+  width: 500px;
+  height: 500px;
+  padding-bottom: 20vh;
+}
+
+#nav-links {
+  float: left;
+  font-size: 20px;
+  text-decoration: none;
+  text-shadow: 0 0 5px black, 0 0 5px black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: white;
+  padding: 20px;
+}
+
+#pokeball img {
+  height: 65px;
+  width: 65px;
+}
+
+#ultraball img {
+  height: 40px;
+  width: 40px;
+}
+
+.search {
+  padding-top: 20px;
+}
+
+.search input {
+  height: 25px;
+  width: 30vw;
+  border-radius: 10px;
+  border-width: 2px;
+  font-family: Futura, sans-serif;
+  padding: 5px 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#list-radios {
+  display: flex;
+  font-size: 12px;
+  font-family: Futura, sans-serif;
+  margin-top: 10px;
+  color: white;
+}
+
+#grid-radios {
+  display: flex;
+  font-size: 20px;
+  font-family: Futura, sans-serif;
+  margin: 10px 0;
+  color: white;
+}
+
+#search-grid-view {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
